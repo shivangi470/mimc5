@@ -50,4 +50,13 @@ add path=>
      git push origin main
 
 
+to generate random no.
+ npm install --save ethers
+ node generate_big_numbers.js
 
+ compile file
+ circom circuit.circom --r1cs --wasm
+
+ node ./circuit_js/generate_witness.js ./circuit_js/circuit.wasm input.json output.wtns
+
+snarkjs wtns export json output.wtns output.json
