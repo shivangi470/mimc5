@@ -1,10 +1,19 @@
-# gorth16
+# mimc5
+
+
+
+MIMC is a block cipher and hash function family designed specifically for SNARK applications. The low multiplicative complexity of MiMC over prime fields makes it suitable for ZK-SNARK applications such as ZCash.
+
+The key scheduling adds the same (uniformly randomly chosen secret) key k ∈ Fq at each round and is followed by the round constant addition. In detail, the encryption function of MiMC is Ex(x)=(Fr1 Fr-2 Fo)(x) + k,
+
+where x ∈ IFq is the plaintext, r is the number of rounds, F, is the round function for round i ≥ 0, and ke Fo is the key. Each F, is defined as Fi(x) = (x + k + c)³, where qe Fq are the round constants and Co = 0. The round constants are chosen as random elements of Fq at the instantiation of MiMC and then fixed. Note that there are no round keys, instead the same key is used in each round and once at the end. All the operations are defined in the underlying field Fq.
+
+![WhatsApp Image 2024-07-18 at 11 37 12_02b35648](https://github.com/user-attachments/assets/e884072e-2279-4e85-941d-308053b7000c)
+
 
 
 it's the example of zkproof
 1. to create the pacakge.json file 
-
-
 
     npm init -y
 
