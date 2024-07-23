@@ -19,7 +19,7 @@ Initialization
 
     Input:
         Plaintext x∈Fq​ (where Fq​ is a finite field with prime order q).
-        Secret key k∈Fqk∈Fq​.
+        Secret key k∈Fq​.
         Number of rounds r.
         Round constants ci​∈Fq​ for i=0,1,…,r−1, where c0=0.
 
@@ -30,8 +30,8 @@ Encryption Process
 
     Rounds:
         For each round ii from 0 to r−1: 
-        si+1​=(si​+k+ci​)3modq
-            Addition: Add the secret key kk and the round constant cici​ to the current state si​.
+        si+1​=(si​+k+ci​)^3modq
+            Addition: Add the secret key k and the round constant ci​ to the current state si​.
             Non-Linear Operation: Cube the result.
             Modular Reduction: Reduce the result modulo q.
 
