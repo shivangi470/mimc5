@@ -79,7 +79,7 @@ it's the example of zkproof
 
     npm init -y
 
-2.Install the Rust 
+2.Install the Rust (run one by one)
    
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
